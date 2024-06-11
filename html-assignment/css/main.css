@@ -5,6 +5,8 @@ body {
 
 header, footer {
     background-color: #ffecd5;
+    border-radius: 10px;
+    padding: 2px;
 }
 
 .site-title {
@@ -21,6 +23,8 @@ div ul {
 
 div ul li:nth-child(odd) {
     background: #ffecd5;
+    padding: 2px;
+    border-radius: 10px;
 }
 
 nav ul {
