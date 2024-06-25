@@ -7,23 +7,34 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <!-- wrapper centers and adds width to the content -->
+    <!-- wraps around all the information to use in CSS -->
     <div class="wrapper">
-        <header>
+        <!-- on page link destination - home -->
+        <header id="home">
             <h1>Lone Starfish</h1>
         </header>
-        <div>
-            <section>
-                <article>
-                    <h2>Life of a Starfish</h2>
-                    <!-- Uploads the image at set width and height -->
-                    <img src="images/lone-starfish.jpg" alt="Image of Starfish" width="195px" height="195px" class="image">
-                    <p>Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
-                    </p>
-                </article>
+        <!-- all of the content -->
+        <main>
+            <nav>
+                <!-- creates on page links by assigning each tags to appropriate part of content -->
+                <ul>
+                    <li><a href="#home">HOME</a> </li>
+                    <li><a href="#story">STORY</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <!-- class of info wraps around all of the story section -->
+            <!-- on page link destination - story-->
+            <section id="story" class="info">
+                <h2>Life of a Starfish</h2>
+                <!-- Uploads the image at set width and height -->
+                <img src="images/lone-starfish.jpg" alt="Image of Starfish" width="250" height="250" class="image">
+                <p>Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
+                </p>
             </section>
-            <section>
-                <h3>Facts About Starfish</h3>
+            <!-- class of facts wraps around all the facts -->
+            <section class="facts">
+                <h2>Facts About Starfish</h2>
                 <ul>
                     <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
                     <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.
@@ -32,41 +43,46 @@
                     <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
                 </ul>
             </section>
-            <!-- contact groups up the rest of the info (contact to learn more), and adds targets the padding and margins of info.          -->
-            <div class="contact">
+            <!-- class of contact wraps around all the "contact to learn more" section -->
+            <!-- on page link destination - contact -->
+            <section id="contact" class="contact">
                 <h3>Contact to learn more</h3>
+                <!-- class of forms wraps around all the actual forms to fill out -->
                 <div class="forms">
-                    <form action="index.html method=post">
-                        <label for="text">Your Name</label>
-                        <input type="text" name="Your Name">
-                    </form>
-                    <form action="index.html" method="post">    
+                    <form>
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name">
+    
                         <label for="email">Your Email</label>
-                        <input type="email" name="Your Email">
+                        <input type="email" id="email" name="email">
+                        
+                        <!-- class of message only to isolate the last form so i can make the text area bigger -->
+                        <div class="message">
+                            <label for="message">Your message</label>
+                            <input type="text" name="message" id="message">
+                        </div>
                     </form>
-                    <form action="index.html" method="post">
-                        <label for="message">Your Message</label>
-                        <input type="text" name="Your Message">
+                    <form>            
+                        <p>Would you like to visit the starfish?</p>
+                        <!-- radio buttons -->
+                        <div class="radio">
+                           <label for="yes">Yes</label>
+                           <input type="radio" id="yes" name="visit" value="yes">
+
+                           <label for="no">No</label>
+                           <input type="radio" id="no" name="visit" value="no">
+
+                           <label for="yes">Maybe</label>
+                           <input type="radio" id="maybe" name="visit" value="maybe">
+                        </div>        
+                        <button type="submit">SEND</button>
                     </form>
-                    <div>
-                        <h4>Would you like to visit the starfish?</h4>
-                        <form action="index.html" method="post">
-                            <label for="yes">Yes</label>
-                            <input type="radio" id="yes" value="yes">
-                            <label for="no">No</label>
-                            <input type="radio" id="no" value="no">
-                            <label for="maybe">Maybe</label>
-                            <input type="radio" id="maybe" value="maybe">
-                        </form>
-                        <form action="index.html" method="post">
-                            <label for="send">Send</label>
-                            <input type="submit" value="Send">
-                        </form>
-                    </div>
                 </div>
-            </div>
-        </div>
-        <footer>©Lone Starfish.</footer>
+            </section>
+        </main>
+        <footer>
+            <p>©Lone Starfish.</p>
+        </footer>
     </div>
 </body>
 </html>

@@ -1,65 +1,168 @@
 hmtl {
-    font-size: 18px ;
+    font-size: 16px ;
 }    
 
 body {
     background-color: #aad4cf;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-/* wraps around all the information(is the main parent) */
-.wrapper {
-    background-color:lightcyan;
-    margin: 0px 100px 10px 100px;
-    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
+/* wrapper centers and adds color to background */
+.wrapper {
+    background-color:lightcyan;
+    margin: 0px 150px 0px 150px;
+}
+
+/* makes the heading a set image (without repeating) and adjusts size */
 header {
     background-image: url(../images/lone-starfish-wide.jpg);
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
     color: white;
-    padding: 60px;
+    padding: 100px;
+    /* in the mockup, there's a black line on the left of the image. Either that's in there by mistake, or as a test to see how close we get to pixel perfect. So i added it */
+    border-left: 1px solid black;
 }
 
-article h2 {
-    margin-left: 10px;
+/* posistions h1 and makes text larger */
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    padding-top: 100px;
 }
 
-p {
-    font-size: 12px;
-    margin: 0px 20px 20px 10px;
+/* styles the navigation buttons centered and side by side */
+nav ul {
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    margin-top: 0;
 }
-/* targets the image of starfish */
+
+/* adjusts space */
+nav ul li {
+    margin: 0 10px;
+    padding: 0px 100px;
+}
+
+/* styles buttons */
+nav ul li a {
+    /* removes underlines and bullets */
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
+
+/* adjusts space some more, but also adds a line in between first 2 buttons */
+nav ul li:nth-child(1) {
+    border-right: 1px solid black;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+}
+
+/* same idea but for in between the second and third button */
+nav ul li:nth-child(2) {
+    border-right: 1px solid black;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+}
+
+/* to accomadate for all the moving i did for the other buttons */
+nav ul li:nth-child(3) {
+    padding-top: 10px ;
+    padding-bottom: 10px;
+}
+
+/* arranges the headings and sets a size based on the default I set (16px) */
+.facts h2, .contact h3 {
+    margin: 10px 10px;
+    font-size: 1.5rem;
+}
+
+/* same ^ */
+.info h2 {
+    margin: 10px 10px;
+    font-size: 2rem;
+}
+
+/* adds what i think is the right amount of space on the paragraph edge */
+.info p {
+    margin: 0 20px 0 10px;
+}
+
+/* targets the image of starfish and lets the paragrapg wrap around it when window shrinks*/
 .image {
     float: left;
     padding: 0px 15px 20px 10px ;
 }
 
-section h3 {
-    margin-left: 10px;
-}
-/* unordered list of facts */
-ul {
-    font-size: 12px;
+/* positions unordered list of facts, and puts round bullets instead of square  */
+.facts {
     list-style-type: disc;
-    /* margin: 0; */
-    padding-left: 30px;
-}
-/* targets all the "contact to learn more", including heading */
-.contact {
-    margin: 0px 10px 30px 10px;
-    padding-bottom: 50px;
-}
-/* targets all the "contact to learn more" forms  */
-.forms {
-    border: 2px solid black;
-    padding: 10px;
+    margin-top: 40px;
 }
 
-label {
-    display: block;
+/* shifts list items in line with the image and headings */
+.facts li {
+    margin-left: -15px;
 }
+
+/* shifts the heading to be in line with image and other headings */
+.contact h3 {
+    margin-left: 0;
+}
+
+/* shrinks the physical box that contact forms are in */
+.contact {
+    margin: 30px 10px 0 10px;
+}
+
+/* shrinks the text areas to fit in box */
+.forms {
+    /* creates box */
+    border: 2px solid black;
+    padding: 30px 20px 20px 20px;
+}
+
+/* makes the text box fit the whole area and spaces them apart */
+.forms form:nth-child(1) input { 
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* increases only the message text area */
+.message input{
+    padding: 30px 2px;
+}
+
+/* slightly increases question above radio buttons */
+.forms form:nth-child(2) p {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+/* adds the space around the radio buttons */
+.radio {
+    padding: 0 50px 20px 0px;
+}
+
+/* takes away button color, removes the underline, and makes button bigger */
+button {
+    text-decoration: none;
+    background-color: transparent;
+    padding: 15px 10px;
+}
+
 
 footer {
-    float: right;
+    /* puts the footer on the right side instead */
+    text-align: end;
+}
+
+/* adds what I think is the right spacing around the footer */
+footer p {
+    padding: 20px 25px 40px 0px;
 }
