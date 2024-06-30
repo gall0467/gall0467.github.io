@@ -92,7 +92,7 @@ nav ul li:nth-child(2) {
 /* targets the image of starfish and lets the paragrapg wrap around it when window shrinks*/
 .image {
     float: left;
-    padding: 0px 15px 20px 10px ;
+    padding: 0px 15px 20px 10px;
 }
 
 /* positions unordered list of facts, and puts round bullets instead of square  */
