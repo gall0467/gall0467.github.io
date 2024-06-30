@@ -71,22 +71,11 @@ nav ul li a {
     font-size: 1.2rem;
 }
 
-/* adjusts space some more, but also adds a line in between first 2 buttons */
-nav ul li:nth-child(1) {
-    /* border-right: 1px solid black; */
-    /* padding: 10px 40px; */
-}
-
 /* same idea but for in between the second and third button */
 nav ul li:nth-child(2) {
     border-left: 1px solid black;
     border-right: 1px solid black;
     padding: 10px 100px;
-}
-
-/* to accomadate for all the moving i did for the other buttons */
-nav ul li:nth-child(3) {
-    /* padding: 10px 40px; */
 }
 
 /* arranges the headings and sets a size based on the default I set (16px) */
