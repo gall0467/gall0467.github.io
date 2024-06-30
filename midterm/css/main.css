@@ -1,5 +1,7 @@
 hmtl {
-    font-size: 16px ;
+    font-size: 16px;
+    margin: 0;
+    box-sizing: border-box;
 }    
 
 body {
@@ -34,18 +36,31 @@ header h1 {
     padding-top: 100px;
 }
 
-/* styles the navigation buttons centered and side by side */
-nav ul {
-    list-style: none;
-    justify-content: center;
+/* targets the whole nav element */
+.navbar {
+    overflow: hidden;
+}
+
+/* targets the all nav list items */
+.container {
+    padding: 0px 190px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* targets and styles the navigation buttons centered and in a row */
+.nav-menu {
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     margin-top: 0;
+    list-style: none;
 }
 
 /* adjusts space */
 nav ul li {
-    margin: 0 10px;
-    padding: 0px 100px;
+    margin: 0 50px;
+    padding: 0px 50px;
 }
 
 /* styles buttons */
@@ -53,36 +68,28 @@ nav ul li a {
     /* removes underlines and bullets */
     text-decoration: none;
     color: black;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 /* adjusts space some more, but also adds a line in between first 2 buttons */
 nav ul li:nth-child(1) {
-    border-right: 1px solid black;
-    padding-top: 10px ;
-    padding-bottom: 10px;
+    /* border-right: 1px solid black; */
+    /* padding: 10px 40px; */
 }
 
 /* same idea but for in between the second and third button */
 nav ul li:nth-child(2) {
+    border-left: 1px solid black;
     border-right: 1px solid black;
-    padding-top: 10px ;
-    padding-bottom: 10px;
+    padding: 10px 100px;
 }
 
 /* to accomadate for all the moving i did for the other buttons */
 nav ul li:nth-child(3) {
-    padding-top: 10px ;
-    padding-bottom: 10px;
+    /* padding: 10px 40px; */
 }
 
 /* arranges the headings and sets a size based on the default I set (16px) */
-.facts h2, .contact h3 {
-    margin: 10px 10px;
-    font-size: 1.5rem;
-}
-
-/* same ^ */
 .info h2 {
     margin: 10px 10px;
     font-size: 2rem;
@@ -102,7 +109,14 @@ nav ul li:nth-child(3) {
 /* positions unordered list of facts, and puts round bullets instead of square  */
 .facts {
     list-style-type: disc;
-    margin-top: 40px;
+    margin-top: 50px;
+    padding-top: 15px;
+}
+
+/* arranges the headings and sets a size based on the default I set (16px) */
+.facts h2, .contact h3 {
+    margin: 10px 10px;
+    font-size: 1.5rem;
 }
 
 /* shifts list items in line with the image and headings */
