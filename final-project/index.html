@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,23 +13,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <!-- Open Sans GOOGLE FONTS Link -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <div class="the-wrapper">
-        <header>
+        <header class="nav-page">
             <!-- Navigation buttons and logo area -->
             <!-- Buttons are responsive -->
-            <nav>
-                <div class="logo">
-                    <img src="logo.png" alt="Three Star Media Logo">
-                </div>
-                <ul class="nav-buttons">
+            <div class="logo-banner">
+                <img src="images/logo.png" alt="Three Star Media Logo">
+                <ul class="home-button">
                     <li><a href="#home">Home</a></li>
+                </ul>
+            </div>
+            <nav class="rest-of-links">
+                <ul>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#serv">Services</a></li>
                     <li><a href="#team">Team</a></li>
@@ -36,10 +40,14 @@
                 </ul>
                 <div class="search-bar">
                     <input type="text" placeholder="Search">
+                    <div class="icon">
                     <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
                 </div>
             </nav>
+        </header>
             <!-- Welcome box of text -->
+        <header>
             <section id="home" class="welcome-box">
                 <div class="background-image">
                     <div class="gray-box">
@@ -47,7 +55,9 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magnam rerum voluptas iusto reiciendi quam nostrum ametique nihil aboluptatem provident reque rerum maiores voluptate tempore.</p>
 
                         <div class="connect-button">
-                            <p>Connect with us <i class="fa-solid fa-caret-right"></i></p>
+                            <button>
+                                <p>Connect with us <i class="fa-solid fa-caret-right"></i></p>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -57,12 +67,12 @@
         <!-- About us section of text + img -->
         <!-- (img left text right) -->
         <section id="about" class="about">
-            <img src="that-about-picture" alt="About us section" class="about-img">
-            <!-- <div class="about-text"> -->
+            <img src="images/about-us.jpg" alt="About us section" class="about-img">
+            <div class="about-text">
                 <h2>About Us</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero unde repellendus exercitationem asperiores ducimus placeat, maiores soluta nesciunt pariatur aliquam consequatur saepe sit praesentium laboriosam perferendis amet ea nisi?</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quae? A quia accusamus, excepturi corrupti sint reiciendis soluta ad mollitia quos non, natus perferendis rem sunt in exercitationem?</p>
-            <!-- </div> -->
+            </div>
         </section>
 
         <!-- Our Services Section -->
@@ -72,56 +82,72 @@
             <div class="services">
                 <!-- Digital Transformation -->
                 <div class="service-box">
-                    <img src="digital-transformation" alt="Digital Transformation" class="dt">
-                    <h3>Digital Transformation</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia aeque error qui consectetur in repellendus magnama vitae corporis quae deleniti explicabo nisi?</p>
+                    <img src="images/digital.jpg" alt="Digital Transformation" class="dt">
+                    <div class="digital-info">
+                        <h3>Digital Transformation</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia aeque error qui consectetur in repellendus magnama vitae corporis quae deleniti explicabo nisi?</p>
                     
-                    <div class="digital-plans-button">
-                        <p>Digital Plans <i class="fa-solid fa-caret-right"></i></p>
+
+
+                            <button class="digital-plans-button">
+                                <p>Digital Plans <i class="fa-solid fa-caret-right"></i></p>
+                            </button>
+
                     </div>
                 </div>
 
                 <!-- Marketing -->
                 <div class="service-box">
-                    <img src="marketing" alt="Marketing" class="m">
-                    <h3>Marketing</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia aeque error qui consectetur in repellendus magnama vitae corporis quae deleniti explicabo nisi?</p>
+                    <img src="images/marketing.jpg" alt="Marketing" class="m">
+                    <div class="marketing-info">
+                        <h3>Marketing</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia aeque error qui consectetur in repellendus magnama vitae corporis quae deleniti explicabo nisi?</p>
 
-                    <div class="marketing-plans-buttons">
-                        <p>Market Plans <i class="fa-solid fa-caret-right"></i></p>
+
+                            <button class="marketing-plans-button">
+                                <p>Market Plans <i class="fa-solid fa-caret-right"></i></p>
+                            </button>
+
                     </div>
                 </div>
 
                 <!-- Video Production -->
                 <div class="service-box">
-                    <img src="video-production" alt="Video Production" class="vp">
-                    <h3>Video Production</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia aeque error qui consectetur in repellendus magnama vitae corporis quae deleniti explicabo nisi?</p>
+                    <img src="images/video.jpg" alt="Video Production" class="vp">
+                    <div class="video-info">
+                        <h3>Video Production</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia aeque error qui consectetur in repellendus magnama vitae corporis quae deleniti explicabo nisi?</p>
 
-                    <div class="video-plans-button">
-                        <p>Video Plans <i class="fa-solid fa-caret-right"></i></p>
+
+                            <button class="video-plans-button">
+                                <p>Video Plans <i class="fa-solid fa-caret-right"></i></p>
+                            </button>
+
                     </div>
                 </div>
 
                 <!-- Web Development -->
                 <div class="service-box">
-                    <img src="web-development" alt="Web Development" class="wd">
-                    <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia aeque error qui consectetur in repellendus magnama vitae corporis quae deleniti explicabo nisi?</p>
-                    
-                    <div class="web-plans-button">
-                        <p>Web Plans <i class="fa-solid fa-caret-right"></i></p>
+                    <img src="images/web.jpg" alt="Web Development" class="wd">
+                    <div class="web-info">
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia aeque error qui consectetur in repellendus magnama vitae corporis quae deleniti explicabo nisi?</p>
+                            <button class="web-plans-button">
+                                <p>Web Plans <i class="fa-solid fa-caret-right"></i></p>
+                            </button>
                     </div>
                 </div>
 
                 <!-- Print -->
                 <div class="service-box">
-                    <img src="print" alt="Print" class="p">
-                    <h3>Print</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia aeque error qui consectetur in repellendus magnama vitae corporis quae deleniti explicabo nisi?</p>
-                    
-                    <div class="print-plans-button">
-                        <p>Print Plans <i class="fa-solid fa-caret-right"></i></p>
+                    <img src="images/print.jpg" alt="Print" class="print">
+                    <div class="print-info">
+                        <h3>Print</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia aeque error qui consectetur in repellendus magnama vitae corporis quae deleniti explicabo nisi?</p>
+                        
+                            <button class="print-plans-button">
+                                <p>Print Plans <i class="fa-solid fa-caret-right"></i></p>
+                            </button>
                     </div>
                 </div>
             </div>
@@ -130,11 +156,16 @@
         <!-- Our Vision Section -->
         <!-- Add background img tag with css -->
         <section class="vision">
-            <h2>Our Vision</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eos voluptatem deleniti iure id, accusantium rerum est commodi veniam tempora ipsam officiis fugiat saepe, velit alias exercitationem delectus ex ea laudantium.</p>
-
-            <div class="learn-more-button">
-                <p>Learn More <i class="fa-solid fa-caret-right"></i></p>
+            <div class="vision-background">
+                <div class="vision-text">
+                    <h2>Our Vision</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eos voluptatem deleniti iure id, accusantium rerum est commodi veniam tempora ipsam officiis fugiat saepe, velit alias exercitationem delectus ex ea laudantium.</p>
+                </div>    
+                <div class="learn-more-button">
+                    <button>
+                        <p>Learn More <i class="fa-solid fa-caret-right"></i></p>
+                    </button>
+                </div>
             </div>
         </section>
 
@@ -144,7 +175,7 @@
             <div class="team">
                 <!-- Team Member 1 -->
                 <div class="team-member">
-                    <img src="team-pic-of-the-guy" alt="John Doe" class="human">
+                    <img src="images/john.jpg" alt="John Doe" class="human">
                     <div class="text">
                         <h3>John Doe</h3>
                         <p>CEO and Co-owner</p>
@@ -153,7 +184,7 @@
                 </div>
                 <!-- Team Member 2 -->
                 <div class="team-member">
-                    <img src="pic-of-team-member" alt="Bob Rite" class="human">
+                    <img src="images/bob.jpg" alt="Bob Rite" class="human">
                     <div class="text">
                         <h3>Bob Rite</h3>
                         <p>CFO and Co-owner</p>
@@ -165,13 +196,13 @@
 
         <!-- Contact Us Section -->
         <!-- (message left, map right) -->
-        <section id="contact" class="contact">
+        <section id="contact" class="contact-page">
             <h2>Contact Us</h2>
             <div class="contact">
                 <div class="contact-form">
                     <h3>Send us a message</h3>
                     <!-- Contact Form -->
-                    <form action="#">
+                    <form action="#" method="get">
                         <label for="name">Full Name</label>
                         <input type="text" id="name" name="name" required>
 
@@ -184,6 +215,29 @@
                     </form>
                 </div>
 
+                <!-- Hours of Operation -->
+                <div class="hours">
+                    <h3>Hours of operation</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Days</th>
+                                <th>Hours</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday - Friday</td>
+                                <td>9 AM - 6 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday - Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
                 <!-- Location Map -->
                 <div class="location-map">
                     <h3>Location</h3>
@@ -193,28 +247,7 @@
                 </div>
             </div>
 
-            <!-- Hours of Operation -->
-            <div class="hours">
-                <h3>Hours of operation</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Days</th>
-                            <th>Hours</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Monday - Friday</td>
-                            <td>9 AM - 6 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Saturday - Sunday</td>
-                            <td>Closed</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+
         </section>
 
         <!-- Footer Section -->

@@ -1,1 +1,323 @@
-/* NO CSS FOR NOW */
+/* MOBILE (DEFAULT) */
+.the-wrapper {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Open Sans";
+    font-size: 12px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    margin-top: 50px;   
+}
+
+/* Page with links and logo */
+header ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-page {
+    background-color: #222;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo-banner {
+    background-color: #c78c06;
+
+}
+
+
+img {
+    padding-right: 1000px;
+    padding-top: 10px;
+}
+
+.home-button {
+    padding: 20px;
+}
+
+
+.home-button li a:link {
+    padding: 20px;
+    color: #222;
+}
+
+.home-button li a:visited {
+    color: #222;
+}
+
+
+
+.rest-of-links ul li {
+    padding-bottom: 20px;
+}
+
+.rest-of-links ul li a:link {
+    color: #c78c06;
+}
+
+.rest-of-links ul li a:visited {
+    color: #c78c06;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+.search-bar {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    padding: 8px;
+}
+
+.icon {
+    border: 1px solid #c78c06;
+    padding: 5.5px;
+    color: #c78c06;
+}
+
+
+/* "welcome to three star media" */
+
+.welcome-box {
+    margin: 0 auto;
+
+}
+
+.background-image {
+    background-image: url('../images/main-banner.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 75vh;
+    background-repeat: none;
+}
+
+
+.gray-box {
+    background-color: rgba(34, 34, 34, 0.8);
+    width: 100%;
+    height: 28vh;
+    color: white;
+    /* padding: 20px 10px 0 10px; */
+}
+
+.gray-box h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.gray-box p {
+    padding: 20px 15px 5px 5px;
+}
+
+.connect-button {
+    padding: 5px;
+}
+
+.connect-button button {
+    background-color: #c78c06;
+    padding: 10px 30px 10px 30px;
+    border: none;
+}
+
+.connect-button p {
+    font-size: 1rem;
+    /* padding-bottom: 5px; */
+}
+
+/* About us */
+
+.about {
+    background-color: #ffe6ac;
+}
+
+.about-img {
+    width: 100%;
+}
+
+.about-text {
+    margin: 10px 10px;
+    padding-bottom: 30px;
+}
+
+.about-text p {
+    padding: 10px 0;
+    line-height: 1.5;
+}
+
+/* our services */
+
+.services {
+    padding: 10px 10px;
+}
+
+.services img {
+    width: 100%;
+}
+
+.digital-info, .marketing-info, .video-info, .web-info, .print-info {
+    background-color: #ffe6ac;
+    padding: 40px 5px 10px 5px;
+}
+
+.digital-info p, .marketing-info p, .video-info p, .web-info p, .print-info p {
+    padding: 10px;
+}
+
+.digital-plans-button, .marketing-plans-button, .video-plans-button, .web-plans-button, .print-plans-button {
+    background-color: #222;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+}
+
+
+
+.vision-text {
+    color: white;
+    padding: 5px 10px;
+}
+
+.vision-text p {
+    padding-bottom: 5px;
+}
+
+.learn-more-button {
+    padding: 10px;
+}
+
+.learn-more-button button{
+    background-color:  rgba(34, 34, 34, 0.5);
+    color: white;
+    padding: 20px 20px;
+    border: 1px solid #c78c06;
+}
+
+.vision-background {
+    background-image: url(../images/vision.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 24vh;
+}
+
+/* OUR TEAM */
+
+.human {
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.text {
+    background-color: #ffe6ac;
+    padding: 10px 10px;
+}
+
+.team {
+    padding: 0px 10px;
+}
+
+.team h2 {
+    padding-left: 10px;
+}
+
+.team-member {
+    margin-top: 10px;
+}
+
+
+/* CONTACT US  */
+
+.contact-page {
+    width: 90%;
+    margin: 10px 10px;
+    padding: 10px;
+}
+
+/* forms  */
+
+.contact-form form {
+    width: 100%;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #222;
+    box-sizing: border-box;
+}
+
+/* hours of operation */
+
+.hours table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #222;
+}
+
+.hours th, .hours td {
+    border: 1px solid #222;
+    padding: 10px;
+    text-align: left;
+}
+
+.hours th {
+    background-color: #ffe6ac;
+}
+
+.hours td {
+    background-color: white;
+}
+
+
+footer {
+    background-color: #222;
+    color: #c78c06;
+    padding: 15px 10px;
+}
+
+footer p {
+    padding: 10px 0;
+}
+
+
+
+.location-map {
+    width: 100%;
+    margin: 10px 10px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 50vh;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 760px) {
+    
+}
