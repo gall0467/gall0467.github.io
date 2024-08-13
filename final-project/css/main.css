@@ -121,7 +121,7 @@ nav ul li {
 .gray-box {
     background-color: rgba(34, 34, 34, 0.8);
     width: 100%;
-    height: 28vh;
+    height: 50vh;
     color: white;
     /* padding: 20px 10px 0 10px; */
 }
@@ -130,10 +130,13 @@ nav ul li {
     font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 20px;
+    padding: 30px 5px 0px 10px;
+    line-height: 1.5;
 }
 
 .gray-box p {
     padding: 20px 15px 5px 5px;
+    line-height: 1.5;
 }
 
 .connect-button {
@@ -223,7 +226,7 @@ nav ul li {
     background-image: url(../images/vision.jpg);
     background-size: cover;
     width: 100%;
-    height: 24vh;
+    height: 30vh;
 }
 
 /* OUR TEAM */
@@ -319,5 +322,29 @@ footer p {
 
 /* DESKTOP */
 @media screen and (min-width: 760px) {
+    .nav-page {
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo-banner {
+        display: flex;
+    }
+    header ul li a {
+        display: flex;
+        gap: 20px;
+    }
+
+    .rest-of-links ul {
+        display: flex;
+    }
     
+    img {
+        padding-right: 0;
+    }
+
+    .background-image {
+        height: 500px;
+    }
 }
